@@ -1,0 +1,8 @@
+prefix=/home/irol/catkin_ws/install
+
+Name: e-Series_UR5e
+Description: Description of e-Series_UR5e
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

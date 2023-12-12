@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/timestamp_info.dir/src/timestamp_info.cpp.o -o /home/irol/catkin_ws/devel/lib/pcd_publisher/timestamp_info 
