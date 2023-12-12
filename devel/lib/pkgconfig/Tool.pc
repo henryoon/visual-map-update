@@ -1,0 +1,8 @@
+prefix=/home/irol/catkin_ws/devel
+
+Name: Tool
+Description: Description of Tool
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

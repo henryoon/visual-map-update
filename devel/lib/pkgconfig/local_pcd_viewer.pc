@@ -1,0 +1,8 @@
+prefix=/home/irol/catkin_ws/devel
+
+Name: local_pcd_viewer
+Description: Description of local_pcd_viewer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

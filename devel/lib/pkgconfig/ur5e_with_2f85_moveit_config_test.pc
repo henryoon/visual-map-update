@@ -1,0 +1,8 @@
+prefix=/home/irol/catkin_ws/devel
+
+Name: ur5e_with_2f85_moveit_config_test
+Description: Description of ur5e_with_2f85_moveit_config_test
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
