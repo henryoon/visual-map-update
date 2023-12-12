@@ -1,0 +1,32 @@
+<launch>
+    <arg name="offline"          default="false"/>
+    <include unless="$(arg offline)" 
+        file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="align_depth" value="true"/>
+        <arg name="filters"               value="pointcloud"/>
+        <arg name="linear_accel_cov" value="1.0"/>
+        <arg name="unite_imu_method" value="linear_interpolation"/>
+    </include>
+    
+    <node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
+        <param name="rtabmap_args" type="string" value="--delete_db_on_start"/>
+        <param name="visual_odometry" type="string" value="false"/>
+        <param name="odom_topic" type="string" value="/odom"/>
+
+        <param name="rgb_topic" type="string" value="/camera/color/image_raw"/>
+        <param name="depth_topic" type="string" value="/camera/aligned_depth_to_color/image_raw"/>
+        <param name="camera_info_topic" type="string" value="/camera/color/camera_info"/>
+        <param name="depth_camera_info_topic" type="string" value="/camera/depth/camera_info"/>
+        <param name="rtabmapviz" type="string" value="false"/>
+        <param name="rviz" type="string" value="true"/>
+
+        <param name="frame_id" type="string" value="base_link"/>
+
+        <!-- <param name="queue_size" type="int" value="10"/> -->
+
+        <!-- RTAB-Map's parameters -->
+        <param name="RGBD/AngularUpdate"        type="string" value="0.01"/>
+        <param name="RGBD/LinearUpdate"         type="string" value="0.01"/>
+        <param name="RGBD/OptimizeFromGraphEnd" type="string" value="false"/>
+    </node>
+</launch>

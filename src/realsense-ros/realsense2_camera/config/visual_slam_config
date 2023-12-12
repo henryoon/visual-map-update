@@ -1,0 +1,4 @@
+rtabmap:
+  rtabmap:
+    Grid:
+      CellSize: 0.01
