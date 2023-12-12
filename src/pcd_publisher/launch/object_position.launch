@@ -1,0 +1,21 @@
+<launch>
+
+    <!-- Node for base to tool transformation -->
+    <node name="base2tool0_tf_node" pkg="tf_trans" type="base2tool0_tf.py" output="screen">
+    </node>
+
+    <!-- Node for camera to point transformation -->
+    <node name="apriltag_detector_node" pkg="tf_trans" type="apriltag_detector.py" output="screen">
+    </node>
+
+    <!-- Node for camera to point transformation -->
+    <node name="cam2point_tf_selected_node" pkg="tf_trans" type="cam2point_tf_selected.py" output="screen">
+    </node>
+
+    <!-- Node for base to point transformation -->
+    <node name="base2point_tf_selected_node" pkg="tf_trans" type="base2point_tf_selected.py" output="screen">
+    </node>
+
+    <!-- <node name="pcd_publisher_node" pkg="pcd_publisher" type="publish_pcd" output="screen"/> -->
+
+</launch>

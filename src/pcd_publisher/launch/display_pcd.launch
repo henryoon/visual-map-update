@@ -1,0 +1,7 @@
+<launch>
+    <!-- Run the C++ node that publishes the PCD -->
+    <node name="pcd_publisher_node" pkg="pcd_publisher" type="publish_pcd" output="screen"/>
+
+    <!-- Run RViz with a custom config (optional) -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find pcd_publisher)/rviz/display_pcd.rviz" output="screen"/>
+</launch>

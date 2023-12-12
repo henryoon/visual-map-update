@@ -1,0 +1,5 @@
+roslaunch ur_robot_driver ur5e_bringup.launch
+roslaunch ur5e_moveit_config ur5e_moveit_planning_execution.launch
+rqt --> /controller_manager --> scaled_pos_joint_traj_controller 'off' --> joint_group_position_controller 'on'
+roslaunch moveit_servo pose_tracking_example.launch
+rosrun moveit_servo target_pose.py

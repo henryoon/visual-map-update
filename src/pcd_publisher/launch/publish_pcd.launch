@@ -1,0 +1,19 @@
+<launch>
+    <node name="virtual_tf_node" pkg="tf_trans" type="virtual_tf.py" output="screen">
+    </node>
+    <node name="odometry_node" pkg="tf_trans" type="odometry.py" output="screen">
+    </node>
+
+    <!-- Include the opensource_tracking.launch -->
+    <include file="/home/irol/catkin_ws/src/realsense-ros/realsense2_camera/launch/opensource_tracking.launch"/>
+        
+    <!-- Run the C++ node that publishes the PCD -->
+    <node name="pcd_publisher_node" pkg="pcd_publisher" type="publish_pcd" output="screen"/>
+    <!-- <node name="local_pcd_viewer_node" pkg="local_pcd_viewer" type="publish_local_pcd" output="screen"/>
+    <node name="local_pcd_filter_node" pkg="local_pcd_viewer" type="publish_local_pcd_dynamic" output="screen"/> -->
+
+    <!-- Run RViz with a custom config (optional) -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find pcd_publisher)/rviz/display_pcd.rviz" output="screen"/>
+
+
+</launch>

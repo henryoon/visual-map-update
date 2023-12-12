@@ -1,0 +1,7 @@
+<launch>
+    <!-- Include the publish_pcd.launch -->
+    <include file="$(find pcd_publisher)/launch/publish_pcd.launch"/>
+
+    <!-- Include the object_position.launch -->
+    <include file="$(find pcd_publisher)/launch/object_position.launch"/>
+</launch>

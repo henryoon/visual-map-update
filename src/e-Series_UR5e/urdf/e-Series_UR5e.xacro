@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="e-Series_UR5e">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.038284 1.4259E-05 0.056306"
+        rpy="0 0 0" />
+      <mass
+        value="0.76652" />
+      <inertia
+        ixx="0.0012526"
+        ixy="8.6453E-08"
+        ixz="-2.3853E-05"
+        iyy="0.0016928"
+        iyz="5.6638E-07"
+        izz="0.0020813" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-4.0402E-07 -0.010911 0.064879"
+        rpy="0 0 0" />
+      <mass
+        value="1.6078" />
+      <inertia
+        ixx="0.0039245"
+        ixy="-7.5616E-08"
+        ixz="-4.1998E-08"
+        iyy="0.0034477"
+        iyz="9.4808E-05"
+        izz="0.0033425" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.097739"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.2124896632942 -2.7566573778115E-06 0.0644633946441775"
+        rpy="0 0 0" />
+      <mass
+        value="3.48194894188692" />
+      <inertia
+        ixx="0.00741838999556194"
+        ixy="4.28837545739731E-06"
+        ixz="7.87302897203472E-07"
+        iyy="0.141429657593064"
+        iyz="1.83888022876909E-07"
+        izz="0.140265210675503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="0 -0.073446 0.064761"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.148140295327253 -2.18715172334294E-06 -0.0564557902972361"
+        rpy="0 0 0" />
+      <mass
+        value="1.78719922779662" />
+      <inertia
+        ixx="0.00255793300921316"
+        ixy="-2.05988630102884E-07"
+        ixz="-0.000972879430463373"
+        iyy="0.00975641611968272"
+        iyz="-1.10026923503264E-07"
+        izz="0.00937973947506879" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="continuous">
+    <origin
+      xyz="-0.425 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-8.00997962913108E-06 0.00254765403459661 0.0415473672594848"
+        rpy="0 0 0" />
+      <mass
+        value="0.658206626839737" />
+      <inertia
+        ixx="0.00109191688287393"
+        ixy="1.19410397079711E-07"
+        ixz="2.69565838819426E-07"
+        iyy="0.000884746126443946"
+        iyz="-2.58942779151138E-05"
+        izz="0.000686112647130512" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="continuous">
+    <origin
+      xyz="-0.3922 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="5.5481109853317E-05 -0.00311021342395343 0.0781058578879969"
+        rpy="0 0 0" />
+      <mass
+        value="0.538720215182785" />
+      <inertia
+        ixx="0.000698087208344803"
+        ixy="3.21197044276753E-06"
+        ixz="-3.29030595086075E-07"
+        iyy="0.000491809143471576"
+        iyz="7.55035125846897E-06"
+        izz="0.000601190452282659" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="continuous">
+    <origin
+      xyz="0 -0.014043 0.059854"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool0">
+    <inertial>
+      <origin
+        xyz="-2.20230278458189E-09 1.80038318347009E-05 0.025011728835113"
+        rpy="0 0 0" />
+      <mass
+        value="0.218934443014081" />
+      <inertia
+        ixx="0.000120675783994229"
+        ixy="2.16459497438578E-09"
+        ixz="-4.49238950576077E-13"
+        iyy="0.000121384699989552"
+        iyz="1.61072230595421E-07"
+        izz="0.000150863873550317" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/tool0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://e-Series_UR5e/meshes/tool0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="continuous">
+    <origin
+      xyz="-0.00069744 0.046307 0.085657"
+      rpy="1.5708 -1.0646 -3.1265" />
+    <parent
+      link="link_5" />
+    <child
+      link="tool0" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>

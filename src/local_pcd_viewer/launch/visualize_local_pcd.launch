@@ -1,0 +1,16 @@
+<launch>
+  <!-- Launch RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find local_pcd_viewer)/rviz_config.rviz"/>
+
+  <!-- Load and visualize PCD files -->
+  <node name="pcd_loader_1" pkg="pcl_ros" type="pcl_pcd_to_pointcloud" output="screen">
+    <param name="filename" type="string" value="-d $(find local_pcd_viewer)/local_pcd_files/304_1104_localmap01.pcd"/>
+    <param name="topic" type="string" value="pcd_cloud_01"/>
+  </node>
+
+  <node name="pcd_loader_2" pkg="pcl_ros" type="pcl_pcd_to_pointcloud" output="screen">
+    <param name="filename" type="string" value="-d $(find local_pcd_viewer)/local_pcd_files/304_1104_localmap02.pcd"/>
+    <param name="topic" type="string" value="pcd_cloud_02"/>
+  </node>
+<rviz config="package://local_pcd_viewer/rviz_config.rviz"/>
+</launch>
