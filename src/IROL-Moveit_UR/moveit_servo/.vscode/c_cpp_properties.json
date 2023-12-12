@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/irol/irol/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/irol/irol/src/Universal_Robots_ROS_Driver/controller_stopper/include/**",
+        "/home/irol/irol/src/IROL-Moveit_UR/moveit_servo/include/**",
+        "/home/irol/irol/src/mtx_driver_stand/include/**",
+        "/home/irol/irol/src/realsense-ros/realsense2_camera/include/**",
+        "/home/irol/irol/src/Universal_Robots_ROS_Driver/ur_calibration/include/**",
+        "/home/irol/irol/src/fmauch_universal_robot/ur_kinematics/include/**",
+        "/home/irol/irol/src/Universal_Robots_ROS_Driver/ur_robot_driver/include/**",
+        "/home/irol/irol/src/xsens_mtw_driver_release/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
